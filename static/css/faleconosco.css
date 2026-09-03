@@ -1,62 +1,409 @@
-body {
-     background-color: #ffffff;
-     color: rgb(255, 255, 255);
-      
- }
+main {
 
- .contato {
-     max-width: 850px;
-     margin: 60px auto;
-      border-radius:70px;
-     border-radius:70px;
- }
+    background: #000000;
 
- .contato h1 {
-     color: #d4af37;
-     font-weight: bold;
- }
+    min-height: 100vh;
 
- .contato-card {
-     background-color: #000000;
-     border: 1px solid #d4af37;
-     border-radius: 12px;
-     padding: 30px;
-     height: 100%;
- }
+    padding-top: 60px;
 
- .contato-card h4 {
-     color: #d4af37;
-     font-weight: bold;
- }
+    padding-bottom: 60px;
+}
+/* =========================================
+   ÁREA DE AGENDAMENTO
+========================================= */
 
- .contato-card p {
-     color: #ffffff;
- }
+.agendamento {
 
- .form-label {
-     color: #ffffff;
- }
+    max-width: 800px;
 
- .form-control {
-     background-color: #1c1c1c;
-     border: 1px solid #333333;
-     color: rgb(255, 255, 255);
- }
+    margin: 0 auto;
 
- .form-control:focus {
-     background-color: #000000;
-     color: rgb(255, 255, 255);
-     border-color: #d4af37;
-     box-shadow: none;
- }
+    padding: 45px;
+
+    background: linear-gradient(
+        145deg,
+        #000000,
+        #0d0d0d
+    );
+
+    border: 1px solid #5c5858;
+
+    
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.7),
+        0 0 30px rgba(212, 175, 55, 0.06);
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.agendamento h1 {
+
+    color: #d4af37;
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   DESCRIÇÃO
+========================================= */
+
+.agendamento p {
+
+    color: #bdbdbd !important;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.agendamento .form-label {
+
+    color: #f5f5f5;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.agendamento .form-control,
+.agendamento .form-select {
+
+    background-color: #202020;
+
+    color: #ffffff;
+
+    border: 1px solid #3d3d3d;
+
+    border-radius: 8px;
+
+    padding: 12px 14px;
+
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.agendamento .form-control::placeholder {
+
+    color: #777777;
+}
+
+
+/* =========================================
+   FOCO NOS CAMPOS
+========================================= */
+
+.agendamento .form-control:focus,
+.agendamento .form-select:focus {
+
+    background-color: #242424;
+
+    color: #ffffff;
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.agendamento .form-select {
+
+    color: #dddddd;
+}
+
+
+/* =========================================
+   DATA E HORÁRIO
+========================================= */
+
+input[type="date"],
+input[type="time"] {
+
+    color-scheme: dark;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.agendamento textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   BOTÃO ESTETICK
+========================================= */
 
 .btn-estetick {
-    background-color: #000000;
-    color: #fff;
-    border: none;
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b89428
+    );
+
+    color: #000000;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
 }
+
+
+/* =========================================
+   HOVER DO BOTÃO
+========================================= */
 
 .btn-estetick:hover {
     background-color: hsl(0, 27%, 81%);
     color: #fff;
+
+
+    background: linear-gradient(
+        135deg,
+        #e5c158,
+        #d4af37
+    );
+
+    /* border-color: #e5c158;
+
+    color: #000000;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.35); 
+}*/
+
+
+/* =========================================
+   BOTÃO AO CLICAR
+========================================= */
+
+.btn-estetick:active {
+
+    transform: translateY(0);
+
+    box-shadow:
+        0 3px 8px rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    main {
+
+        padding-top: 35px;
+
+        padding-bottom: 50px;
+    }
+
+    .agendamento {
+
+        margin: 0 15px;
+
+        padding: 30px 20px;
+
+        border-radius: 14px;
+    }
+
+    .agendamento h1 {
+
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .agendamento {
+
+        margin: 0 10px;
+
+        padding: 25px 15px;
+    }
+
+    .agendamento h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .agendamento p {
+
+        font-size: 0.9rem;
+    }
+
+    .btn-estetick {
+
+        padding: 12px;
+    }
+}
+
+/* =========================================
+   TÍTULO AGENDAMENTO - BRILHO AUTOMÁTICO
+========================================= */
+
+.agendamento h1 {
+    position: relative;
+    display: inline-block;
+
+    color: #d4af37;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+    animation: brilhoAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   LINHA DOURADA ABAIXO DO TÍTULO
+========================================= */
+
+.agendamento h1::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #f5d76e,
+        #d4af37,
+        transparent
+    );
+
+    transform: translateX(-50%);
+
+    animation: linhaAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   BRILHO DO TEXTO
+========================================= */
+
+@keyframes brilhoAgendamento {
+
+    0% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
+    }
+
+    50% {
+        transform: scale(1.03);
+
+        text-shadow:
+            0 0 5px rgba(212, 175, 55, 0.5),
+            0 0 12px rgba(212, 175, 55, 0.7),
+            0 0 25px rgba(212, 175, 55, 0.6),
+            0 0 40px rgba(212, 175, 55, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
+    }
+}
+
+
+/* =========================================
+   ANIMAÇÃO DA LINHA
+========================================= */
+
+@keyframes linhaAgendamento {
+
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
 }
