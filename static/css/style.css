@@ -1023,7 +1023,7 @@ main .text-center p {
 
 .combo-premium {
     border:
-        2px solid var(--dourado) !important;
+        2px solid var(--dourado) ;
 
     box-shadow:
         0 10px 35px rgba(212, 175, 55, 0.12);
@@ -1248,6 +1248,11 @@ footer::before {
 .footer-estetick .linha-dourada {
     border-top: 1px solid #d4af37;         
 
+}
+.card-img{
+
+    width-max: 500px;
+    height: 500px;
 }
 
 @media (max-width: 768px) {
