@@ -211,6 +211,9 @@ input[type="time"] {
 ========================================= */
 
 .btn-estetick:hover {
+    background-color: hsl(0, 27%, 81%);
+    color: #fff;
+
 
     background: linear-gradient(
         135deg,
@@ -218,15 +221,15 @@ input[type="time"] {
         #d4af37
     );
 
-    border-color: #e5c158;
+    /* border-color: #e5c158;
 
     color: #000000;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(212, 175, 55, 0.35);
-}
+        0 8px 20px rgba(212, 175, 55, 0.35); 
+}*/
 
 
 /* =========================================
@@ -403,4 +406,4 @@ input[type="time"] {
         width: 0;
         opacity: 0;
     }
-} 
+}

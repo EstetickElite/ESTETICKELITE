@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- TAG DO MEU SITE-->
+    <!-- TAG Do MEU SITE-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Página com conteúdos, exercícios e atividades desenvolvidas durante as aulas de Bootstrap, aprendendo a criar páginas web modernas, organizadas e responsivas.">
     <meta name="keywords" content="sites,web desenvolvimento backend">
-    <meta name="author" content="Lucas segura, SeguraPrime, seguralucas949@gmail.com, 11 97387-4201">
-    <title>Agendamento</title>
-    <link rel="icon" href="../favicon.png">
+    <meta name="author" content="Samantha Antonella, Antonellawy, samanthaantonella680@gmail.com, 11 97408-9370">
+    <title>Fale Conosco</title>
+    <link rel="icon" href="/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/faleconosco.css">
     <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/agendamento.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -22,12 +22,13 @@
 
 <body>
     <header>
+        <link rel="stylesheet" href="../static/css/styleheader.css">
         <div class="container header-estetick">
             <div class="header-container">
 
                 <!-- LOGO -->
                 <a href="/index.html" class="logo-estetick">
-                    <img src="../static/img/logo.png" alt="Logo da EstetickElite">
+                    <img src="/static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite">
 
                     <span>
                         Estetick<span>Elite</span>
@@ -39,25 +40,25 @@
                     <ul class="nav-estetick">
 
                         <li>
-                            <a href="../index.html" class="">
+                            <a href="/templates/index.html">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="./cadastro.html">
+                            <a href="/templates/cadastro.html">
                                 Cadastro
                             </a>
                         </li>
 
                         <li>
-                            <a href="./agendamento.html" >
+                            <a href="/templates/agendamento.html">
                                 Agendamento
                             </a>
                         </li>
 
                         <li>
-                            <a href="/templates/faleconosco.html " class="active">
+                            <a href="/templates/faleconosco.html" class="active">
                                 Fale conosco
                             </a>
                         </li>
@@ -72,8 +73,8 @@
                         Cadastrar
                     </a>
 
-                    <a href="/templates/login.html" class="btn-agendar">
-                        Fazer Login
+                    <a href="/templates/agendamento.html" class="btn-agendar">
+                        Agendar
                     </a>
 
                 </div>
@@ -82,148 +83,167 @@
         </div>
     </header>
 
-    <main class="container">
+    <div class="container">
+        <div id="header-container"></div>
+    </div>
 
-        <div class="agendamento">
+    <main class="container contato">
 
-            <div class="text-center mb-4">
+        <div class="text-center mb-5">
 
-                <h1>Agendamento</h1>
+            <h1>Fale Conosco</h1>
 
-                <p style="color: #cccccc;">
-                    Escolha o serviço, a data e o horário desejado.
-                </p>
+            <p style="color: #ffffff;">
+                Entre em contato com a EstetickElite.
+                Estamos prontos para atender você.
+            </p>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/atendimentoonline2.jpg" class="d-block w-100" alt="atendimento1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/img/atendimento1.jpg" class="d-block w-100" alt="atendimento2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/img/clientes.jpg" class="d-block w-100" alt="atendimento3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div><br>
+
+            <div class="row g-4">
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="col-12 col-md-5">
+
+                    <div class="contato-card">
+
+                        <h4>EstetickElite</h4>
+
+                        <p>
+                            Cuidado, qualidade e atenção em cada detalhe.
+                        </p>
+
+                        <hr style="border-color: #333333;">
+
+                        <h5 style="color: #d4af37;">
+                            Telefone
+                        </h5>
+
+                        <p>
+                            (11) 97387-4201
+                        </p>
+
+                        <h5 style="color: #d4af37;">
+                            E-mail
+                        </h5>
+
+                        <p>
+                            seguralucas949@gmail.com
+                        </p>
+
+                        <h5 style="color: #d4af37;">
+                            Atendimento
+                        </h5>
+
+                        <p>
+                            Entre em contato para consultar
+                            nossos horários disponíveis.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- FORMULÁRIO -->
+                <div class="col-12 col-md-7">
+
+                    <div class="contato-card">
+
+                        <h4 class="mb-4">
+                            Envie uma mensagem
+                        </h4>
+
+                        <form>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Nome
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="Seu nome" required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    E-mail
+                                </label>
+
+                                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Assunto
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="Assunto da mensagem" required>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Mensagem
+                                </label>
+
+                                <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"
+                                    required></textarea>
+
+                            </div>
+
+                           <button type="submit" class="btn btn-estetick w-50"
+                                style="color: #000000; border-radius: 50px; background-color: #d4af37 ">
+                                Enviar mensagem
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <form>
-
-                <div class="mb-3">
-
-                    <label class="form-label">
-                        Nome completo
-                    </label>
-
-                    <input type="text" class="form-control" placeholder="Digite seu nome" required>
-
-                </div>
-
-                <div class="mb-3">
-
-                    <label class="form-label">
-                        Veículo
-                    </label>
-
-                    <input type="text" class="form-control" placeholder="Ex.: Honda Civic" required>
-
-                </div>
-
-                <div class="mb-3">
-
-                    <label class="form-label">
-                        Serviço
-                    </label>
-
-                    <select class="form-select" required>
-
-                        <option value="">
-                            Selecione um serviço
-                        </option>
-
-                        <option>
-                            Lavagem técnica — R$ 80,00
-                        </option>
-
-                        <option>
-                            Enceramento Wax — R$ 250,00
-                        </option>
-
-                        <option>
-                            Revitalização de plásticos — R$ 480,00
-                        </option>
-
-                        <option>
-                            Polimento de Pintura — R$ 700,00
-                        </option>
-
-                        <option>
-                            Revitalização de Plásticos Internos — R$ 380,00
-                        </option>
-
-                        <option>
-                            Vitrificação de Vidros — R$ 600,00
-                        </option>
-
-                        <option>
-                            Descontaminação de Pintura — R$ 580,00
-                        </option>
-
-                        <option>
-                            Polimento de Faróis — R$ 150,00
-                        </option>
-
-                        <option>
-                            Combo Start — R$ 300,00
-                        </option>
-
-                        <option>
-                            Combo Premium — R$ 750,00
-                        </option>
-
-                        <option>
-                            Combo Elite — R$ 1.300,00
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-6 mb-3">
-
-                        <label class="form-label">
-                            Data
-                        </label>
-
-                        <input type="date" class="form-control" required>
-
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-
-                        <label class="form-label">
-                            Horário
-                        </label>
-
-                        <input type="time" class="form-control" required>
-
-                    </div>
-
-                </div>
-
-                <div class="mb-4">
-
-                    <label class="form-label">
-                        Observações
-                    </label>
-
-                    <textarea class="form-control" rows="4" placeholder="Alguma observação sobre o veículo?"></textarea>
-
-                </div>
-
-                <button type="submit" class="btn btn-estetick w-100">
-                    Confirmar agendamento
-                </button>
-
-            </form>
-
-        </div>
-
     </main>
+
+
     <footer>
 
-
+        <link rel="stylesheet" href="../static/css/stylefooter.css">
         <div class="footer-estetick">
             <div class="container footer-container">
 
@@ -235,46 +255,44 @@
                     </p>
 
                     <!-- LOGO -->
-                    <a href="/index.html"
+                    <a href="/static/favicon.io/android-chrome-512x512.png"
                         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 logo-footer">
 
-                        <img src="/favicon.png" alt="Logo EstetickElite" width="40" height="40" class="me-2">
+                        <img src="/static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite" width="40"
+                            height="40" class="me-2">
 
                         Estetick<span>Elite</span>
                     </a>
 
                     <!-- MENU -->
-                    <ul class="nav col-md-4 justify-content-end nav-estetick">
+                    <ul class="nav col-md-4 justify-content-end">
 
-                        <!-- HOME -->
                         <li class="nav-item">
-                            <a href="/index.html" class="nav-link px-2 active">
+                            <a href="/index.html" class="nav-link px-2">
                                 Home
                             </a>
                         </li>
 
-                        <!-- CADASTRO -->
                         <li class="nav-item">
-                            <a href="./templates/cadastro.html" class="nav-link px-2 ">
+                            <a href="/templates/cadastro.html" class="nav-link px-2">
                                 Cadastro
                             </a>
                         </li>
 
-                        <!-- AGENDAMENTO -->
                         <li class="nav-item">
-                            <a href="./templates/agendamento.html" class="nav-link px-2 ">
+                            <a href="/templates/agendamento.html" class="nav-link px-2">
                                 Agendamento
                             </a>
                         </li>
 
-                        <!-- FALE CONOSCO -->
                         <li class="nav-item">
-                            <a href="./templates/faleconosco.html" class="nav-link px-2 ">
+                            <a href="../static/css/faleconosco.css" class="nav-link px-2">
                                 Fale conosco
                             </a>
                         </li>
 
                     </ul>
+
                 </div>
 
                 <!-- FRASE DA EMPRESA -->
@@ -291,8 +309,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
-</html>
