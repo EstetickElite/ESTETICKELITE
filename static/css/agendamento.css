@@ -1,20 +1,89 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    width: 100%;
+    background: linear-gradient(
+        135deg,
+        #050505,
+        #111111,
+        #050505
+    );
+
+    border-bottom: 2px solid #d4af37;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.7);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* detalhe dourado */
+
+header::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        #f5d76e,
+        #d4af37,
+        transparent
+    );
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
 
 main {
-
-    background: #000000;
-
-    min-height: 100vh;
+    width: 100%;
+    min-height: 80vh;
 
     padding-top: 60px;
+    padding-bottom: 80px;
 
-    padding-bottom: 60px;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #252525 0%,
+            #111111 35%,
+            #080808 75%
+        );
 }
+
+
 /* =========================================
    ÁREA DE AGENDAMENTO
 ========================================= */
 
 .agendamento {
-
     max-width: 800px;
 
     margin: 0 auto;
@@ -23,13 +92,13 @@ main {
 
     background: linear-gradient(
         145deg,
-        #000000,
+        #171717,
         #0d0d0d
     );
 
-    border: 1px solid #5c5858;
+    border: 1px solid #333333;
 
-    
+    border-top: 3px solid #d4af37;
 
     border-radius: 18px;
 
@@ -44,7 +113,6 @@ main {
 ========================================= */
 
 .agendamento h1 {
-
     color: #d4af37;
 
     font-size: 2.5rem;
@@ -57,12 +125,7 @@ main {
 }
 
 
-/* =========================================
-   DESCRIÇÃO
-========================================= */
-
 .agendamento p {
-
     color: #bdbdbd !important;
 
     font-size: 1rem;
@@ -74,7 +137,6 @@ main {
 ========================================= */
 
 .agendamento .form-label {
-
     color: #f5f5f5;
 
     font-weight: 600;
@@ -89,7 +151,6 @@ main {
 
 .agendamento .form-control,
 .agendamento .form-select {
-
     background-color: #202020;
 
     color: #ffffff;
@@ -100,26 +161,18 @@ main {
 
     padding: 12px 14px;
 
-    transition:
-        border-color 0.3s ease,
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
-/* =========================================
-   PLACEHOLDER
-========================================= */
+/* Placeholder */
 
 .agendamento .form-control::placeholder {
-
     color: #777777;
 }
 
 
-/* =========================================
-   FOCO NOS CAMPOS
-========================================= */
+/* Foco */
 
 .agendamento .form-control:focus,
 .agendamento .form-select:focus {
@@ -140,7 +193,6 @@ main {
 ========================================= */
 
 .agendamento .form-select {
-
     color: #dddddd;
 }
 
@@ -151,7 +203,6 @@ main {
 
 input[type="date"],
 input[type="time"] {
-
     color-scheme: dark;
 }
 
@@ -161,7 +212,6 @@ input[type="time"] {
 ========================================= */
 
 .agendamento textarea {
-
     resize: vertical;
 
     min-height: 120px;
@@ -169,7 +219,7 @@ input[type="time"] {
 
 
 /* =========================================
-   BOTÃO ESTETICK
+   BOTÃO
 ========================================= */
 
 .btn-estetick {
@@ -178,17 +228,17 @@ input[type="time"] {
 
     padding: 14px 20px;
 
-    border: 1px solid #d4af37;
+    border: none;
 
     border-radius: 8px;
 
     background: linear-gradient(
         135deg,
         #d4af37,
-        #b89428
+        #b9932e
     );
 
-    color: #000000;
+    color: #080808;
 
     font-size: 1rem;
 
@@ -196,50 +246,71 @@ input[type="time"] {
 
     letter-spacing: 0.5px;
 
-    cursor: pointer;
-
-    transition:
-        background 0.3s ease,
-        border-color 0.3s ease,
-        color 0.3s ease,
-        transform 0.2s ease,
-        box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-
-/* =========================================
-   HOVER DO BOTÃO
-========================================= */
 
 .btn-estetick:hover {
 
     background: linear-gradient(
         135deg,
-        #e5c158,
+        #f1d267,
         #d4af37
     );
-
-    border-color: #e5c158;
 
     color: #000000;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(212, 175, 55, 0.35);
+        0 8px 20px rgba(212, 175, 55, 0.25);
 }
 
 
 /* =========================================
-   BOTÃO AO CLICAR
+   FOOTER
 ========================================= */
 
-.btn-estetick:active {
+footer {
 
-    transform: translateY(0);
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #030303,
+        #111111,
+        #030303
+    );
+
+    color: #ffffff;
+
+    border-top: 2px solid #d4af37;
+
+    padding: 40px 20px;
+
+    text-align: center;
 
     box-shadow:
-        0 3px 8px rgba(212, 175, 55, 0.25);
+        0 -5px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Texto do footer */
+
+footer p {
+    color: #999999;
+
+    margin: 5px 0;
+}
+
+
+/* Títulos do footer */
+
+footer h3,
+footer h4 {
+    color: #d4af37;
+
+    font-weight: bold;
 }
 
 
@@ -250,9 +321,7 @@ input[type="time"] {
 @media (max-width: 768px) {
 
     main {
-
         padding-top: 35px;
-
         padding-bottom: 50px;
     }
 
@@ -266,15 +335,11 @@ input[type="time"] {
     }
 
     .agendamento h1 {
-
         font-size: 2rem;
     }
+
 }
 
-
-/* =========================================
-   CELULARES PEQUENOS
-========================================= */
 
 @media (max-width: 480px) {
 
@@ -286,18 +351,119 @@ input[type="time"] {
     }
 
     .agendamento h1 {
-
         font-size: 1.7rem;
     }
 
     .agendamento p {
-
         font-size: 0.9rem;
     }
 
     .btn-estetick {
-
         padding: 12px;
+    }
+
+}
+/* =========================================
+   TÍTULO AGENDAMENTO - BRILHO AUTOMÁTICO
+========================================= */
+
+.agendamento h1 {
+    position: relative;
+    display: inline-block;
+
+    color: #d4af37;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+    animation: brilhoAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   LINHA DOURADA ABAIXO DO TÍTULO
+========================================= */
+
+.agendamento h1::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #f5d76e,
+        #d4af37,
+        transparent
+    );
+
+    transform: translateX(-50%);
+
+    animation: linhaAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   BRILHO DO TEXTO
+========================================= */
+
+@keyframes brilhoAgendamento {
+
+    0% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
+    }
+
+    50% {
+        transform: scale(1.03);
+
+        text-shadow:
+            0 0 5px rgba(212, 175, 55, 0.5),
+            0 0 12px rgba(212, 175, 55, 0.7),
+            0 0 25px rgba(212, 175, 55, 0.6),
+            0 0 40px rgba(212, 175, 55, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
     }
 }
 
+
+/* =========================================
+   ANIMAÇÃO DA LINHA
+========================================= */
+
+@keyframes linhaAgendamento {
+
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
