@@ -363,3 +363,107 @@ footer h4 {
     }
 
 }
+/* =========================================
+   TÍTULO AGENDAMENTO - BRILHO AUTOMÁTICO
+========================================= */
+
+.agendamento h1 {
+    position: relative;
+    display: inline-block;
+
+    color: #d4af37;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+    animation: brilhoAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   LINHA DOURADA ABAIXO DO TÍTULO
+========================================= */
+
+.agendamento h1::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #f5d76e,
+        #d4af37,
+        transparent
+    );
+
+    transform: translateX(-50%);
+
+    animation: linhaAgendamento 2.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   BRILHO DO TEXTO
+========================================= */
+
+@keyframes brilhoAgendamento {
+
+    0% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
+    }
+
+    50% {
+        transform: scale(1.03);
+
+        text-shadow:
+            0 0 5px rgba(212, 175, 55, 0.5),
+            0 0 12px rgba(212, 175, 55, 0.7),
+            0 0 25px rgba(212, 175, 55, 0.6),
+            0 0 40px rgba(212, 175, 55, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+
+        text-shadow:
+            0 0 3px rgba(212, 175, 55, 0.2),
+            0 0 8px rgba(212, 175, 55, 0.2);
+    }
+}
+
+
+/* =========================================
+   ANIMAÇÃO DA LINHA
+========================================= */
+
+@keyframes linhaAgendamento {
+
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
