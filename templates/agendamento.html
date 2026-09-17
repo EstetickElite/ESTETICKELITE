@@ -12,9 +12,13 @@
     <meta name="author" content="Lucas segura, SeguraPrime, seguralucas949@gmail.com, 11 97387-4201">
     <title>Agendamento</title>
 
+
     <link rel="icon" href="/favicon.io/android-chrome-192x192.png" type="image/x-icon">
 
     <link rel="icon" href="../favicon.png">
+
+
+    <link rel="icon" href="/favicon.io/android-chrome-192x192.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/agendamento.css">
@@ -22,19 +26,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+
 </head>
 
 <body>
     <header>
+        <link rel="stylesheet" href="../static/css/styleheader.css">
         <div class="container header-estetick">
             <div class="header-container">
 
                 <!-- LOGO -->
                 <a href="/index.html" class="logo-estetick">
 
+
+
+
+
+
                     <img src="../static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite">
 
-                    
 
                     <span>
                         Estetick<span>Elite</span>
@@ -46,27 +56,36 @@
                     <ul class="nav-estetick">
 
                         <li>
-                            <a href="../index.html" class="">
+                            <a href="./index.html" class="active">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="./cadastro.html">
-                                Cadastro
-                            </a>
+
+                            <a href="./templates/cadastro.html">
+
+                                <a href="/cadastro.html">
+
+                                    Cadastro
+                                </a>
                         </li>
 
                         <li>
+
                             <a href="./templates/agendamento.html" class="active">
-                                Agendamento
-                            </a>
+                                <a href="/agendamento.html">
+
+                                    Agendamento
+                                </a>
                         </li>
 
                         <li>
-                            <a href="./faleconosco.html">
-                                Fale conosco
-                            </a>
+
+                            <a href="./templates/faleconosco.html">
+                                <a href="/faleconosco.html">
+                                    Fale conosco
+                                </a>
                         </li>
 
                     </ul>
@@ -75,12 +94,12 @@
                 <!-- BOTÕES -->
                 <div class="botoes-header">
 
-                    <a href="/templates/cadastro.html" class="btn-cadastrar">
+                    <a href="/cadastro.html" class="btn-cadastrar">
                         Cadastrar
                     </a>
 
-                    <a href="./templates/login.html" class="btn-agendar">
-                        Fazer Login
+                    <a href="/agendamento.html" class="btn-agendar">
+                        Agendar
                     </a>
 
                 </div>
@@ -231,8 +250,8 @@
                         <div class="pagamento-card">
                             <input type="radio" name="pagamento" id="pagamento-pix" value="pix" required>
                             <label for="pagamento-pix">
-                                <span>💠</span>
-                                Pix
+                                <img src="/static/img/imagem.png" alt="pix" style="width: 30px; height: 30px;">
+                                1 Pix
                             </label>
                         </div>
 
@@ -240,7 +259,7 @@
                             <input type="radio" name="pagamento" id="pagamento-credito" value="credito" required>
                             <label for="pagamento-credito">
                                 <span>💳</span>
-                                Cartão de Crédito
+                                2 Cartão de Crédito
                             </label>
                         </div>
 
@@ -248,7 +267,7 @@
                             <input type="radio" name="pagamento" id="pagamento-debito" value="debito" required>
                             <label for="pagamento-debito">
                                 <span>💳</span>
-                                Cartão de Débito
+                                3 Cartão de Débito
                             </label>
                         </div>
 
@@ -360,9 +379,10 @@
         </div>
 
     </main>
+
     <footer>
 
-
+        <link rel="stylesheet" href="../static/css/stylefooter.css">
         <div class="footer-estetick">
             <div class="container footer-container">
 
@@ -378,50 +398,51 @@
                         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 logo-footer">
 
 
+
                         <img src="../static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite" width="40"
                             height="40" class="me-2">
+
+
+
 
 
                         Estetick<span>Elite</span>
                     </a>
 
                     <!-- MENU -->
-                    <ul class="nav col-md-4 justify-content-end nav-estetick">
+                    <ul class="nav col-md-4 justify-content-end">
 
-                        <!-- HOME -->
                         <li class="nav-item">
-                            <a href="/index.html" class="nav-link px-2 active">
+                            <a href="/index.html" class="nav-link px-2">
                                 Home
                             </a>
                         </li>
 
-                        <!-- CADASTRO -->
                         <li class="nav-item">
-                            <a href="./templates/cadastro.html" class="nav-link px-2 ">
+                            <a href="/cadastro.html" class="nav-link px-2">
                                 Cadastro
                             </a>
                         </li>
 
-                        <!-- AGENDAMENTO -->
                         <li class="nav-item">
-                            <a href="./templates/agendamento.html" class="nav-link px-2 ">
+                            <a href="/agendamento.html" class="nav-link px-2">
                                 Agendamento
                             </a>
                         </li>
 
-                        <!-- FALE CONOSCO -->
                         <li class="nav-item">
-                            <a href="./templates/faleconosco.html" class="nav-link px-2 ">
+                            <a href="../static/css/faleconosco.css" class="nav-link px-2">
                                 Fale conosco
                             </a>
                         </li>
 
                     </ul>
+
                 </div>
 
                 <!-- FRASE DA EMPRESA -->
                 <div class="text-center py-3 linha-dourada">
-                    <small style="color: #d4af37;">
+                    <small class="bt">
                         Estética automotiva com qualidade e excelência.
                     </small>
                 </div>
@@ -438,121 +459,8 @@
     <!-- Biblioteca para gerar o QR Code (uso apenas para demonstração) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-    <script>
-        var qrGerado = false;
-        var timerInterval = null;
-        var TEMPO_TOTAL = 5 * 60; // 5 minutos em segundos
-
-        function resetarEtapasPix() {
-            document.getElementById('pix-confirmacao').style.display = 'block';
-            document.getElementById('pix-qr-area').style.display = 'none';
-            document.getElementById('pix-expirado').style.display = 'none';
-
-            if (timerInterval) {
-                clearInterval(timerInterval);
-                timerInterval = null;
-            }
-        }
-
-        function iniciarContagemPix() {
-            var segundosRestantes = TEMPO_TOTAL;
-            var timerEl = document.getElementById('pix-timer');
-
-            if (timerInterval) {
-                clearInterval(timerInterval);
-            }
-
-            atualizarTimer();
-
-            timerInterval = setInterval(function () {
-                segundosRestantes--;
-
-                if (segundosRestantes <= 0) {
-                    clearInterval(timerInterval);
-                    timerInterval = null;
-
-                    // Esconde o QR Code e mostra a mensagem de expirado
-                    document.getElementById('pix-qr-area').style.display = 'none';
-                    document.getElementById('pix-expirado').style.display = 'block';
-
-                    // Limpa o QR Code para que um novo seja gerado da próxima vez
-                    document.getElementById('qrcode-pix').innerHTML = '';
-                    qrGerado = false;
-                } else {
-                    atualizarTimer();
-                }
-            }, 1000);
-
-            function atualizarTimer() {
-                var minutos = Math.floor(segundosRestantes / 60);
-                var segundos = segundosRestantes % 60;
-                timerEl.textContent = 'Expira em ' +
-                    String(minutos).padStart(2, '0') + ':' +
-                    String(segundos).padStart(2, '0');
-            }
-        }
-
-        function gerarQrCodePix() {
-            document.getElementById('pix-confirmacao').style.display = 'none';
-            document.getElementById('pix-expirado').style.display = 'none';
-            document.getElementById('pix-qr-area').style.display = 'block';
-
-            if (!qrGerado) {
-                new QRCode(document.getElementById('qrcode-pix'), {
-                    text: document.getElementById('pix-copia-cola-input').value,
-                    width: 180,
-                    height: 180,
-                    colorDark: '#1a1a1a',
-                    colorLight: '#ffffff'
-                });
-                qrGerado = true;
-            }
-
-            iniciarContagemPix();
-        }
-
-        // Alterna a exibição dos campos de cartão/pix conforme a forma de pagamento escolhida
-        document.querySelectorAll('input[name="pagamento"]').forEach(function (radio) {
-            radio.addEventListener('change', function () {
-                var dadosCartao = document.getElementById('dados-cartao');
-                var dadosPix = document.getElementById('dados-pix');
-
-                if (this.value === 'credito' || this.value === 'debito') {
-                    dadosCartao.style.display = 'block';
-                    dadosPix.style.display = 'none';
-                } else if (this.value === 'pix') {
-                    dadosCartao.style.display = 'none';
-                    dadosPix.style.display = 'block';
-                    resetarEtapasPix();
-                }
-            });
-        });
-
-        // Botão "Sim, é o Pix que eu vou pagar" -> gera QR Code e inicia contagem
-        document.getElementById('btn-confirmar-pix').addEventListener('click', function () {
-            gerarQrCodePix();
-        });
-
-        // Botão "Gerar novo QR Code" após expiração
-        document.getElementById('btn-gerar-novo-pix').addEventListener('click', function () {
-            gerarQrCodePix();
-        });
-
-        // Botão "Copiar" do código Pix copia e cola
-        document.getElementById('btn-copiar-pix').addEventListener('click', function () {
-            var input = document.getElementById('pix-copia-cola-input');
-            input.select();
-            navigator.clipboard.writeText(input.value).then(function () {
-                var btn = document.getElementById('btn-copiar-pix');
-                var textoOriginal = btn.textContent;
-                btn.textContent = 'Copiado!';
-                setTimeout(function () {
-                    btn.textContent = textoOriginal;
-                }, 1500);
-            });
-        });
-    </script>
 
 </body>
 
-</html>>
+
+</html>
