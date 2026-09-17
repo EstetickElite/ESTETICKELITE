@@ -55,7 +55,7 @@
             margin-bottom: 10px;
         }
 
-        .login-admin-box > p {
+        .login-admin-box>p {
             color: #888888;
             font-size: 14px;
             margin-bottom: 30px;
@@ -161,13 +161,7 @@
                         E-mail
                     </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Digite seu e-mail"
-                        autocomplete="username"
-                        required
-                    >
+                    <input type="email" id="email" placeholder="Digite seu e-mail" autocomplete="username" required>
                 </div>
 
                 <!-- SENHA -->
@@ -176,13 +170,8 @@
                         Senha
                     </label>
 
-                    <input
-                        type="password"
-                        id="senha"
-                        placeholder="Digite sua senha"
-                        autocomplete="current-password"
-                        required
-                    >
+                    <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password"
+                        required>
                 </div>
 
                 <!-- BOTÃO -->
@@ -210,6 +199,14 @@
             }
         ];
 
+        // USUÁRIOS AUTORIZADOS
+        const usuariosPermitidos2 = [
+            {
+                email: "seguralucas949@gmail.com",
+                senha: "Lu170209@"
+            }
+        ];
+
 
         // FORMULÁRIO DE LOGIN
         document.getElementById("loginAdmin").addEventListener("submit", function (event) {
@@ -225,7 +222,7 @@
             const usuarioEncontrado = usuariosPermitidos.find(function (usuario) {
 
                 return usuario.email === email &&
-                       usuario.senha === senha;
+                    usuario.senha === senha;
 
             });
 
