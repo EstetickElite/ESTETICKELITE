@@ -1,270 +1,71 @@
+
 body {
-    background: #080808;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
+     background-color: #ffffff;
+     color: rgb(255, 255, 255);
+      
+ }
 
+ .contato {
+     max-width: 850px;
+     margin: 60px auto;
+      border-radius:70px;
+     border-radius:70px;
+ }
 
+ .contato h1 {
+     color: #d4af37;
+     font-weight: bold;
+ }
 
-/* ===================================================== MAIN ===================================================== */
-main.contato {
-    max-width: 1200px;
-    min-height: calc(100vh - 250px);
-    padding-top: 65px;
-    padding-bottom: 75px;
-}
+ .contato-card {
+     background-color: #000000;
+     border: 1px solid #d4af37;
+     border-radius: 12px;
+     padding: 30px;
+     height: 100%;
+ }
 
-/* TÍTULO */
-.titulo-contato {
-    text-align: center;
-    margin-bottom: 45px;
-}
+ .contato-card h4 {
+     color: #d4af37;
+     font-weight: bold;
+ }
 
-.titulo-contato h1 {
-    color: #d4af37;
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
+ .contato-card p {
+     color: #ffffff;
+ }
 
-.titulo-contato p {
-    max-width: 650px;
-    margin: auto;
-    color: #bdbdbd;
-    font-size: 17px;
-    line-height: 1.7;
-}
+ .form-label {
+     color: #ffffff;
+ }
 
-.linha-titulo {
-    width: 70px;
-    height: 3px;
-    margin: 20px auto 0;
-    background: linear-gradient(90deg, #b89428, #d4af37, #b89428);
-    border-radius: 10px;
-}
+ .form-control {
+     background-color: #1c1c1c;
+     border: 1px solid #333333;
+     color: rgb(255, 255, 255);
+ }
 
-/* ===================================================== CARROSSEL ===================================================== */
-.carousel {
-    max-width: 1000px;
-    margin: 0 auto 55px;
-    border-radius: 18px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.35);
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55);
-}
-
-.carousel-item {
-    height: 400px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.65);
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 12px;
-    padding: 18px;
-    bottom: 35px;
-}
-
-.carousel-caption h5 {
-    color: #d4af37;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.carousel-caption p {
-    margin-bottom: 0;
-    color: #ffffff;
-}
-
-/* ===================================================== CARDS ===================================================== */
-.contato-card {
-    height: 100%;
-    padding: 32px;
-    background: #111111;
-    border: 1px solid rgba(212, 175, 55, 0.25);
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-    transition: 0.3s ease;
-}
-
-.contato-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(212, 175, 55, 0.55);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
-}
-
-.contato-card h4 {
-    color: #d4af37;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contato-card h5 {
-    color: #d4af37;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 22px;
-}
-
-.contato-card p {
-    color: #cccccc;
-    line-height: 1.7;
-    margin-bottom: 8px;
-}
-
-.contato-card hr {
-    border-color: rgba(212, 175, 55, 0.2);
-    margin: 25px 0;
-}
-
-/* ===================================================== FORMULÁRIO ===================================================== */
-.form-label {
-    color: #eeeeee;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.form-control {
-    background: #080808;
-    border: 1px solid #333333;
-    color: #ffffff;
-    border-radius: 8px;
-    padding: 12px 14px;
-}
-
-.form-control:focus {
-    background: #080808;
-    color: #ffffff;
-    border-color: #d4af37;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
-}
-
-.form-control::placeholder {
-    color: #777777;
-}
-
-textarea.form-control {
-    resize: vertical;
-    min-height: 140px;
-}
+ .form-control:focus {
+     background-color: #000000;
+     color: rgb(255, 255, 255);
+     border-color: #d4af37;
+     box-shadow: none;
+ }
 
 .btn-estetick {
-    background: linear-gradient(135deg, #d4af37, #b89428);
-    border: 1px solid #d4af37;
-    color: #080808;
-    font-weight: bold;
-    padding: 13px;
-    border-radius: 8px;
-    transition: 0.3s ease;
+    background-color: #000000;
+    color: #fff;
+    border: none;
 }
 
 .btn-estetick:hover {
-    background: #d4af37;
-    color: #080808;
-    transform: translateY(-2px);
-    box-shadow: 0 7px 18px rgba(212, 175, 55, 0.2);
+    background-color: hsl(0, 27%, 81%);
+    color: #fff;
 }
-
-
-
-/* ===================================================== RESPONSIVIDADE ===================================================== */
-@media (max-width: 992px) {
-    .header-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 0;
-    }
-
-    .logo-estetick {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .nav-estetick {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .botoes-header {
-        justify-content: center;
-    }
+.btn-estetick w-50{
+color: #fff;
+border-radius: 50px; 
+background-color: #d4af37 
 }
-
-@media (max-width: 768px) {
-    main.contato {
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .titulo-contato h1 {
-        font-size: 32px;
-    }
-
-    .titulo-contato p {
-        font-size: 15px;
-    }
-
-    .carousel-item {
-        height: 280px;
-    }
-
-    .contato-card {
-        padding: 25px;
-    }
-
-    .footer-top {
-        text-align: center;
-    }
-
-    .copyright {
-        width: 100%;
-        margin-bottom: 20px !important;
-    }
-
-    .logo-footer {
-        width: 100%;
-        margin-bottom: 20px !important;
-    }
-
-    .footer-menu {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-estetick {
-        gap: 2px;
-    }
-
-    .nav-estetick .nav-link {
-        font-size: 14px;
-        padding: 8px 9px !important;
-    }
-
-    .botoes-header {
-        width: 100%;
-    }
-
-    .btn-cadastrar,
-    .btn-agendar {
-        flex: 1;
-    }
-
-    .titulo-contato h1 {
-        font-size: 28px;
-    }
-
-    .carousel-item {
-        height: 220px;
-    }
+.btn-estetick{
+    background-color: #d4af37 
 }
