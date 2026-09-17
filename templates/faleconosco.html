@@ -44,7 +44,7 @@
                         </li>
 
                         <li>
-                            <a href="cadastro.html" class="active">
+                            <a href="cadastro.html" >
                                 Cadastro
                             </a>
                         </li>
@@ -56,7 +56,7 @@
                         </li>
 
                         <li>
-                            <a href="faleconosco.html">
+                            <a href="faleconosco.html" class="active">
                                 Fale conosco
                             </a>
                         </li>
@@ -140,7 +140,7 @@
                         </h5>
 
                         <p>
-                            (11) 97387-4201
+                            (11) 99999-9999
                         </p>
 
                         <h5 style="color: #d4af37;">
@@ -148,7 +148,7 @@
                         </h5>
 
                         <p>
-                            seguralucas949@gmail.com
+                            EstetickElite@gmail.com
                         </p>
 
                         <h5 style="color: #d4af37;">
@@ -169,7 +169,7 @@
                     <div class="contato-card">
 
                         <h4 class="mb-4">
-                            Envie uma mensagem
+                            Fale com a gente !
                         </h4>
 
                         <form>
@@ -177,7 +177,7 @@
                             <div class="mb-3">
 
                                 <label class="form-label">
-                                    Nome
+                                    NOME
                                 </label>
 
                                 <input type="text" class="form-control" placeholder="Seu nome" required>
@@ -187,27 +187,39 @@
                             <div class="mb-3">
 
                                 <label class="form-label">
-                                    E-mail
+                                    E-MAIL
                                 </label>
 
                                 <input type="email" class="form-control" placeholder="Seu e-mail" required>
 
                             </div>
 
-                            <div class="mb-3">
+  <label for="assunto">Assunto da Mensagem:</label>
+<select id="assunto" name="assunto" required>
+  <option value="" disabled selected>Selecione o assunto...</option>
 
-                                <label class="form-label">
-                                    Assunto
-                                </label>
+  <!-- Reclamações e Qualidade -->
+  <option value="insatisfacao-servico">Insatisfação com um serviço realizado</option>
+  <option value="dano-veiculo">Relatar problema </option>
+  <option value="atraso-entrega">Atraso na entrega do veículo</option>
 
-                                <input type="text" class="form-control" placeholder="Assunto da mensagem" required>
+  <!-- Financeiro e Pagamentos -->
+  <option value="duvida-pagamento">Dúvidas sobre formas de pagamento e parcelamento</option>
+  <option value="problema-faturamento">Problema com cobrança, nota fiscal ou comprovante</option>
+  <option value="solicitacao-estorno">Solicitação de reembolso ou estorno</option>
 
-                            </div>
+  <!-- Agendamentos e Suporte -->
+  <option value="reagendamento-cancelamento">Reagendar ou cancelar um horário</option>
+  <option value="garantia">Dúvidas sobre garantia de serviços (Ex: Vitrificação/PPF)</option>
+  <option value="atendimento-suporte">Elogios, sugestões ou atendimento geral</option>
+
+  <option value="outro">Outro assunto administrativo</option>
+</select>
 
                             <div class="mb-4">
 
-                                <label class="form-label">
-                                    Mensagem
+                                <label class="form-label"></br>
+                                    ASSUNTO SOBRE O SERVIÇO PRESTADO :
                                 </label>
 
                                 <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"
