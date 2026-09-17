@@ -12,9 +12,13 @@
     <meta name="author" content="Lucas segura, SeguraPrime, seguralucas949@gmail.com, 11 97387-4201">
     <title>Agendamento</title>
 
+
     <link rel="icon" href="/favicon.io/android-chrome-192x192.png" type="image/x-icon">
 
     <link rel="icon" href="../favicon.png">
+
+
+    <link rel="icon" href="/favicon.io/android-chrome-192x192.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/agendamento.css">
@@ -155,15 +159,16 @@
 
 <body>
     <header>
+        <link rel="stylesheet" href="../static/css/styleheader.css">
         <div class="container header-estetick">
             <div class="header-container">
 
                 <!-- LOGO -->
                 <a href="/index.html" class="logo-estetick">
 
+
                     <img src="../static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite">
 
-                    
 
                     <span>
                         Estetick<span>Elite</span>
@@ -175,27 +180,61 @@
                     <ul class="nav-estetick">
 
                         <li>
-                            <a href="../index.html" class="">
+                            <a href="./index.html" class="active">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="./templates/cadastro.html">
-                                Cadastro
+
+                            <a href="cadastro.html">
+
+                                <a href="cadastro.html">
+
+                                    Cadastro
+                                </a>
                             </a>
                         </li>
 
                         <li>
-                            <a href="./templates/agendamento.html" class="active">
+
+                            <a href="agendamento.html" class="active">
+
+                                <a href="agendamento.html">
+
+                                    <a href="agendamento.html">
+
+                                        Agendamento </a>
+                                    </a>
+                                </a>
+
                                 Agendamento
                             </a>
+
                         </li>
 
                         <li>
-                            <a href="./templates/faleconosco.html">
-                                Fale conosco
+
+
+                            <a href="faleconosco.html">
+                                <a href="faleconosco.html">
+
+                                    Fale conosco
+
+                                </a>
+
+                                <a href="faleconosco.html">
+                                    <a href="faleconosco.html">
+
+                                        <a href="faleconosco.html">
+                                            <a href="faleconosco.html">
+                                                Fale conosco
+                                            </a>
+                                        </a>
+                                    </a>
+                                </a>
                             </a>
+
                         </li>
 
                     </ul>
@@ -203,15 +242,14 @@
 
                 <!-- BOTÕES -->
                 <div class="botoes-header">
+                    <a href="cadastro.html" class="btn-cadastrar">
 
-                    <a href="/templates/cadastro.html" class="btn-cadastrar">
                         Cadastrar
-                    </a>
 
-                    <a href="./templates/login.html" class="btn-agendar">
+                    </a>
+                    <a href="login.html" class="btn-agendar">
                         Fazer Login
                     </a>
-
                 </div>
 
             </div>
@@ -360,8 +398,8 @@
                         <div class="pagamento-card">
                             <input type="radio" name="pagamento" id="pagamento-pix" value="pix" required>
                             <label for="pagamento-pix">
-                                <span>💠</span>
-                                Pix
+                                <img src="/static/img/imagem.png" alt="pix" style="width: 30px; height: 30px;">
+                                1 Pix
                             </label>
                         </div>
 
@@ -369,7 +407,7 @@
                             <input type="radio" name="pagamento" id="pagamento-credito" value="credito" required>
                             <label for="pagamento-credito">
                                 <span>💳</span>
-                                Cartão de Crédito
+                                2 Cartão de Crédito
                             </label>
                         </div>
 
@@ -377,7 +415,7 @@
                             <input type="radio" name="pagamento" id="pagamento-debito" value="debito" required>
                             <label for="pagamento-debito">
                                 <span>💳</span>
-                                Cartão de Débito
+                                3 Cartão de Débito
                             </label>
                         </div>
 
@@ -489,9 +527,10 @@
         </div>
 
     </main>
+
     <footer>
 
-
+        <link rel="stylesheet" href="../static/css/stylefooter.css">
         <div class="footer-estetick">
             <div class="container footer-container">
 
@@ -503,54 +542,55 @@
                     </p>
 
                     <!-- LOGO -->
-                    <a href="/index.html"
+                    <a href="index.html"
                         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 logo-footer">
+
 
 
                         <img src="../static/favicon.io/android-chrome-512x512.png" alt="Logo EstetickElite" width="40"
                             height="40" class="me-2">
 
 
+
+
+
                         Estetick<span>Elite</span>
                     </a>
 
                     <!-- MENU -->
-                    <ul class="nav col-md-4 justify-content-end nav-estetick">
+                    <ul class="nav col-md-4 justify-content-end">
 
-                        <!-- HOME -->
                         <li class="nav-item">
-                            <a href="/index.html" class="nav-link px-2 active">
+                            <a href="index.html" class="nav-link px-2">
                                 Home
                             </a>
                         </li>
 
-                        <!-- CADASTRO -->
                         <li class="nav-item">
-                            <a href="./templates/cadastro.html" class="nav-link px-2 ">
+                            <a href="cadastro.html" class="nav-link px-2">
                                 Cadastro
                             </a>
                         </li>
 
-                        <!-- AGENDAMENTO -->
                         <li class="nav-item">
-                            <a href="./templates/agendamento.html" class="nav-link px-2 ">
+                            <a href="agendamento.html" class="nav-link px-2">
                                 Agendamento
                             </a>
                         </li>
 
-                        <!-- FALE CONOSCO -->
                         <li class="nav-item">
-                            <a href="./templates/faleconosco.html" class="nav-link px-2 ">
+                            <a href="../static/css/faleconosco.css" class="nav-link px-2">
                                 Fale conosco
                             </a>
                         </li>
 
                     </ul>
+
                 </div>
 
                 <!-- FRASE DA EMPRESA -->
                 <div class="text-center py-3 linha-dourada">
-                    <small style="color: #d4af37;">
+                    <small class="bt">
                         Estética automotiva com qualidade e excelência.
                     </small>
                 </div>
@@ -684,4 +724,5 @@
 
 </body>
 
-</html>>
+
+</html>
