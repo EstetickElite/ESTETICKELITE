@@ -1,6 +1,6 @@
 
 body {
-     background-color: #ffffff;
+     background-color: #000000;
      color: rgb(255, 255, 255);
       
  }
@@ -60,4 +60,12 @@ body {
 .btn-estetick:hover {
     background-color: hsl(0, 27%, 81%);
     color: #fff;
+}
+.btn-estetick w-50{
+color: #fff;
+border-radius: 50px; 
+background-color: #d4af37 
+}
+.btn-estetick{
+    background-color: #d4af37 
 }
