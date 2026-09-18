@@ -275,11 +275,9 @@ body {
     border-radius: 10px;
 
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             var(--preto-card),
-            var(--dourado-claro)
-        );
+            var(--dourado-claro));
 
     transform: scaleX(0);
 
@@ -916,10 +914,11 @@ main .text-center p {
 }
 
 
-.card-servico .card-text{
+.card-servico .card-text {
     min-height: 40px;
     margin-bottom: 0;
 }
+
 /* =====================================================
    BOTÃO PRINCIPAL
 ===================================================== */
@@ -1023,7 +1022,7 @@ main .text-center p {
 
 .combo-premium {
     border:
-        2px solid var(--dourado) ;
+        2px solid var(--dourado);
 
     box-shadow:
         0 10px 35px rgba(212, 175, 55, 0.12);
@@ -1253,10 +1252,11 @@ footer::before {
 }
 
 .footer-estetick .linha-dourada {
-    border-top: 1px solid #d4af37;         
+    border-top: 1px solid #d4af37;
 
 }
-.card-img{
+
+.card-img {
 
     grid-area: 500px;
     height: 500px;
@@ -1274,3 +1274,15 @@ footer::before {
     }
 }
 
+.btn-admin {
+    color: #555;
+    text-decoration: none;
+    font-size: 11px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.btn-admin:hover {
+    color: #d4af37;
+    opacity: 1;
+}

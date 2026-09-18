@@ -31,10 +31,8 @@
 
 <body>
 
-
     <!-- =====================================================
          HEADER
-    
          ===================================================== -->
 
     <header>
@@ -64,28 +62,24 @@
 
                         <li>
                             <a href="../index.html">
-                            <a href="/index.html">
                                 Home
                             </a>
                         </li>
 
                         <li>
                             <a href="./cadastro.html">
-                            <a href="cadastro.html">
                                 Cadastro
                             </a>
                         </li>
 
                         <li>
                             <a href="./agendamento.html" class="active">
-                            <a href="agendamento.html" class="active">
                                 Agendamento
                             </a>
                         </li>
 
                         <li>
                             <a href="./faleconosco.html">
-                            <a href="faleconosco.html">
                                 Fale conosco
                             </a>
                         </li>
@@ -100,11 +94,15 @@
                 <div class="botoes-header">
 
                     <a href="./cadastro.html" class="btn-cadastrar">
+
                         Cadastrar
+
                     </a>
 
                     <a href="./login.html" class="btn-agendar">
+
                         Fazer Login
+
                     </a>
 
                 </div>
@@ -123,7 +121,6 @@
     <main class="container">
 
         <div class="agendamento">
-
 
             <!-- TÍTULO -->
 
@@ -152,49 +149,70 @@
                 <div class="mb-3">
 
                     <label for="nomeCliente" class="form-label">
+
                         Nome completo
+
                     </label>
 
                     <input type="text" class="form-control" id="nomeCliente" placeholder="Digite seu nome" required>
-                    
+
                 </div>
+
+
+                <!-- VEÍCULO -->
 
                 <div class="mb-3">
 
-                    <label class="form-label">
+                    <label for="veiculoCliente" class="form-label">
+
                         Veículo
+
                     </label>
 
-                    <input type="text" class="form-control" placeholder="Ex.: Honda Civic" required>
+                    <input type="text" class="form-control" id="veiculoCliente" placeholder="Ex.: Honda Civic" required>
 
                 </div>
 
+
+                <!-- PLACA -->
+
                 <div class="mb-3">
 
-                    <label class="form-label">
+                    <label for="placa-veiculo" class="form-label">
+
                         Placa do veículo
+
                     </label>
 
                     <input type="text" class="form-control" id="placa-veiculo" placeholder="Ex.: ABC1D23" maxlength="7"
                         style="text-transform: uppercase;" required>
 
                 </div>
-            
-                <!-- PLACA -->
+
+
+                <!-- E-MAIL -->
 
                 <div class="mb-3">
 
-                    <label for="E-mail" class="form-label">
+                    <label for="emailCliente" class="form-label">
+
                         E-mail
+
                     </label>
 
-                    <input type="email" class="form-control" id="E-mail" placeholder="Digite seu e-mail" required>
+                    <input type="email" class="form-control" id="emailCliente" placeholder="Digite seu e-mail" required>
+
+                </div>
+
+
                 <!-- SERVIÇO -->
 
                 <div class="mb-3">
 
                     <label for="servicoCliente" class="form-label">
+
                         Serviço
+
                     </label>
 
                     <select class="form-select" id="servicoCliente" required>
@@ -259,10 +277,12 @@
                     <div class="col-md-6 mb-3">
 
                         <label for="dataCliente" class="form-label">
+
                             Data
+
                         </label>
 
-                        <input type="date" class="form-control" id="dataCliente" required>
+                        <input type="date" class="form-control" id="dataCliente" min="" required>
 
                     </div>
 
@@ -270,7 +290,9 @@
                     <div class="col-md-6 mb-3">
 
                         <label for="horarioCliente" class="form-label">
+
                             Horário
+
                         </label>
 
                         <input type="time" class="form-control" id="horarioCliente" required>
@@ -285,7 +307,9 @@
                 <div class="mb-4">
 
                     <label for="observacoesCliente" class="form-label">
+
                         Observações
+
                     </label>
 
                     <textarea class="form-control" id="observacoesCliente" rows="4"
@@ -303,6 +327,7 @@
                     <label class="form-label">
                         Forma de pagamento
                     </label>
+
 
                     <div class="pagamento-opcoes">
 
@@ -324,40 +349,38 @@
                         </div>
 
 
-                        <!-- CRÉDITO -->
+                        <!-- CARTÃO -->
 
                         <div class="pagamento-card">
 
-                            <input type="radio" name="pagamento" id="pagamento-credito" value="Cartão de Crédito"
-                                required>
+                            <input type="radio" name="pagamento" id="pagamento-cartao" value="Cartão" required>
 
-                            <label for="pagamento-credito">
+                            <label for="pagamento-cartao">
 
                                 <span>
                                     💳
                                 </span>
 
-                                Cartão de Crédito
+                                Cartão
 
                             </label>
 
                         </div>
 
 
-                        <!-- DÉBITO -->
+                        <!-- PAGAMENTO NA LOJA -->
 
                         <div class="pagamento-card">
 
-                            <input type="radio" name="pagamento" id="pagamento-debito" value="Cartão de Débito"
-                                required>
+                            <input type="radio" name="pagamento" id="pagamento-loja" value="Pagamento na loja" required>
 
-                            <label for="pagamento-debito">
+                            <label for="pagamento-loja">
 
                                 <span>
-                                    💳
+                                    🏪
                                 </span>
 
-                                Cartão de Débito
+                                Pagamento na loja
 
                             </label>
 
@@ -366,22 +389,39 @@
                     </div>
 
 
-                    <!-- PIX -->
+                    <!-- =================================================
+                         PIX
+                         ================================================= -->
 
                     <div id="dados-pix">
 
+                        <div class="pix-logo-container">
+
+                            <img src="https://i.pinimg.com/736x/58/d1/e4/58d1e4c0d00fb74e2963c2b79e79f196.jpg" alt="Pix"
+                                class="logo-pix">
+
+                        </div>
+
+
                         <span class="pix-demo-badge">
+
                             DEMONSTRAÇÃO — NÃO É UM PIX REAL
+
                         </span>
+
 
                         <div id="pix-confirmacao">
 
                             <p style="margin-bottom: 12px;">
+
                                 Deseja gerar o QR Code para pagar via Pix?
+
                             </p>
 
                             <button type="button" class="btn btn-estetick" id="btn-confirmar-pix">
+
                                 Sim, é o Pix que eu vou pagar
+
                             </button>
 
                         </div>
@@ -390,17 +430,27 @@
                         <div id="pix-qr-area" style="display: none;">
 
                             <p style="margin-bottom: 4px;">
+
                                 Escaneie o QR Code abaixo com o app do seu banco.
+
                             </p>
 
                             <div id="qrcode-pix"></div>
 
                             <div class="pix-timer" id="pix-timer">
+
                                 Expira em 05:00
+
                             </div>
 
-                            <p style="font-size: 0.8rem; color: #aaa; margin-bottom: 0;">
+                            <p style="
+                                    font-size: 0.8rem;
+                                    color: #aaa;
+                                    margin-bottom: 0;
+                                ">
+
                                 Chave fictícia usada apenas para demonstração.
+
                             </p>
 
                             <div class="pix-copia-cola">
@@ -409,7 +459,9 @@
                                     value="PIX-DEMONSTRACAO-ESTETICKELITE">
 
                                 <button type="button" class="btn btn-estetick" id="btn-copiar-pix">
+
                                     Copiar
+
                                 </button>
 
                             </div>
@@ -428,7 +480,9 @@
                             <br>
 
                             <button type="button" class="btn btn-estetick" id="btn-gerar-novo-pix">
+
                                 Gerar novo QR Code
+
                             </button>
 
                         </div>
@@ -436,7 +490,9 @@
                     </div>
 
 
-                    <!-- CARTÃO -->
+                    <!-- =================================================
+                         CARTÃO
+                         ================================================= -->
 
                     <div id="dados-cartao">
 
@@ -450,7 +506,6 @@
 
                         </div>
 
-
                         <div class="mb-3">
 
                             <label class="form-label">
@@ -461,10 +516,9 @@
 
                         </div>
 
-
                         <div class="row">
 
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-6 mb-3">
 
                                 <label class="form-label">
                                     Validade
@@ -474,8 +528,7 @@
 
                             </div>
 
-
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-6 mb-3">
 
                                 <label class="form-label">
                                     CVV
@@ -486,41 +539,42 @@
                             </div>
 
                         </div>
-                            <div class="col-md-4 mb-3">
 
-                                <label class="form-label">
-                                    Parcelas
-                                </label>
+                        <div class="mb-3">
 
-                                <select class="form-select" id="parcelas-select">
+                            <label for="parcelas-select" class="form-label">
 
-                                    <option value="1">
-                                        1x sem juros
-                                    </option>
+                                Parcelas
 
-                                    <option value="2">
-                                        2x sem juros
-                                    </option>
+                            </label>
 
-                                    <option value="3">
-                                        3x sem juros
-                                    </option>
+                            <select class="form-select" id="parcelas-select">
 
-                                    <option value="4">
-                                        4x sem juros
-                                    </option>
+                                <option value="1">
+                                    1x sem juros
+                                </option>
 
-                                    <option value="5">
-                                        5x sem juros
-                                    </option>
+                                <option value="2">
+                                    2x sem juros
+                                </option>
 
-                                    <option value="6">
-                                        6x sem juros
-                                    </option>
+                                <option value="3">
+                                    3x sem juros
+                                </option>
 
-                                </select>
+                                <option value="4">
+                                    4x sem juros
+                                </option>
 
-                            </div>
+                                <option value="5">
+                                    5x sem juros
+                                </option>
+
+                                <option value="6">
+                                    6x sem juros
+                                </option>
+
+                            </select>
 
                         </div>
 
@@ -529,7 +583,9 @@
                 </div>
 
 
-                <!-- CONFIRMAÇÃO -->
+                <!-- =================================================
+                     CONFIRMAÇÃO
+                     ================================================= -->
 
                 <div class="confirmacao-agendamento">
 
@@ -539,7 +595,8 @@
 
                         <label for="confirmar-agendamento">
 
-                            Confirmo que os dados informados estão corretos e desejo realizar este agendamento.
+                            Confirmo que os dados informados estão corretos
+                            e desejo realizar este agendamento.
 
                         </label>
 
@@ -551,13 +608,16 @@
                 <!-- BOTÃO -->
 
                 <button type="submit" class="btn btn-estetick w-100">
+
                     Confirmar agendamento
+
                 </button>
 
 
                 <!-- MENSAGEM -->
 
-                <div id="mensagemAgendamento" class="mt-3 text-center"></div>
+                <div id="mensagemAgendamento" class="mt-3 text-center">
+                </div>
 
             </form>
 
@@ -579,7 +639,10 @@
                 <div class="d-flex flex-wrap justify-content-between align-items-center py-4">
 
                     <p class="col-md-4 mb-0 copyright">
-                        © 2026 EstetickElite. Todos os direitos reservados.
+
+                        © 2026 EstetickElite.
+                        Todos os direitos reservados.
+
                     </p>
 
 
@@ -596,28 +659,43 @@
                     <ul class="nav col-md-4 justify-content-end">
 
                         <li class="nav-item">
+
                             <a href="../index.html" class="nav-link px-2">
-                            <a href="/index.html" class="nav-link px-2">
+
                                 Home
+
                             </a>
+
                         </li>
 
                         <li class="nav-item">
+
                             <a href="./cadastro.html" class="nav-link px-2">
+
                                 Cadastro
+
                             </a>
+
                         </li>
 
                         <li class="nav-item">
+
                             <a href="./agendamento.html" class="nav-link px-2">
+
                                 Agendamento
+
                             </a>
+
                         </li>
 
                         <li class="nav-item">
+
                             <a href="./faleconosco.html" class="nav-link px-2">
+
                                 Fale conosco
+
                             </a>
+
                         </li>
 
                     </ul>
@@ -628,7 +706,9 @@
                 <div class="text-center py-3 linha-dourada">
 
                     <small class="bt">
+
                         Estética automotiva com qualidade e excelência.
+
                     </small>
 
                 </div>
@@ -640,9 +720,22 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- QR Code -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+
+
+    <!-- JavaScript -->
+
     <script src="../static/js/agendamento.js"></script>
+
 </body>
 
 </html>
