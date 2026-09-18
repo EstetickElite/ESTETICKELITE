@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
         campoData.addEventListener("input", function () {
 
             // Remove tudo que não for número
-            let valor = campoData.value.replace(/\D/g, "");
+            let valor = this.value.replace(/\D/g, "");
 
             // Limita para 8 números: DDMMYYYY
             valor = valor.substring(0, 8);
 
-            // Adiciona as barras automaticamente
-            if (valor.length >= 5) {
+            // Formata a data
+            if (valor.length > 4) {
 
                 valor =
                     valor.substring(0, 2) +
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "/" +
                     valor.substring(4, 8);
 
-            } else if (valor.length >= 3) {
+            } else if (valor.length > 2) {
 
                 valor =
                     valor.substring(0, 2) +
@@ -47,10 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }
 
-            campoData.value = valor;
-
+            this.value = valor;
         });
 
+
+        // =====================================================
+        // VALIDAR DATA AO SAIR DO CAMPO
+        // =====================================================
 
         campoData.addEventListener("blur", function () {
 
@@ -60,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Verifica formato DD/MM/AAAA
             const partes = valor.split("/");
 
             if (
@@ -83,7 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const ano = Number(partes[2]);
 
 
-            // Verifica limites básicos
+            // =====================================================
+            // VERIFICAR DIA E MÊS
+            // =====================================================
+
             if (
                 dia < 1 ||
                 dia > 31 ||
@@ -99,7 +104,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
 
-            // Cria a data
+            // =====================================================
+            // VERIFICAR SE A DATA EXISTE
+            // =====================================================
+
             const dataSelecionada = new Date(
                 ano,
                 mes - 1,
@@ -107,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
 
-            // Verifica se a data realmente existe
             if (
                 dataSelecionada.getFullYear() !== ano ||
                 dataSelecionada.getMonth() !== mes - 1 ||
@@ -122,14 +129,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
 
-            // =================================================
+            // =====================================================
             // DATA DE HOJE
-            // =================================================
+            // =====================================================
 
             const hoje = new Date();
 
             hoje.setHours(0, 0, 0, 0);
-
             dataSelecionada.setHours(0, 0, 0, 0);
 
 
@@ -144,9 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
 
-            // =================================================
+            // =====================================================
             // LIMITE DE 2 ANOS
-            // =================================================
+            // =====================================================
 
             const limite = new Date();
 
@@ -167,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
         });
-
     }
 
 
@@ -180,9 +185,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
 
-        // =================================================
+        // =====================================================
         // PEGAR DADOS
-        // =================================================
+        // =====================================================
 
         const nome =
             document
@@ -239,9 +244,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 .trim();
 
 
-        // =================================================
+        // =====================================================
         // PAGAMENTO
-        // =================================================
+        // =====================================================
 
         const pagamento =
             document.querySelector(
@@ -257,9 +262,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        // =================================================
+        // =====================================================
         // VALIDAR DATA
-        // =================================================
+        // =====================================================
 
         const partesData =
             dataDigitada.split("/");
@@ -272,7 +277,9 @@ document.addEventListener("DOMContentLoaded", function () {
             partesData[2].length !== 4
         ) {
 
-            alert("Digite uma data válida no formato DD/MM/AAAA.");
+            alert(
+                "Digite uma data válida no formato DD/MM/AAAA."
+            );
 
             return;
         }
@@ -281,8 +288,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const dia =
             Number(partesData[0]);
 
+
         const mes =
             Number(partesData[1]);
+
 
         const ano =
             Number(partesData[2]);
@@ -296,7 +305,10 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
 
-        // Verifica se a data existe
+        // =====================================================
+        // VERIFICAR SE A DATA EXISTE
+        // =====================================================
+
         if (
             dataObjeto.getFullYear() !== ano ||
             dataObjeto.getMonth() !== mes - 1 ||
@@ -309,37 +321,41 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        // =================================================
+        // =====================================================
         // COMPARAR COM HOJE
-        // =================================================
+        // =====================================================
 
         const hoje = new Date();
 
         hoje.setHours(0, 0, 0, 0);
-
         dataObjeto.setHours(0, 0, 0, 0);
 
 
         if (dataObjeto < hoje) {
 
-            alert("Não é possível agendar para uma data passada.");
+            alert(
+                "Não é possível agendar para uma data passada."
+            );
 
             return;
         }
 
 
-        // =================================================
+        // =====================================================
         // CONVERTER PARA O FORMATO DO PAINEL
-        // DD/MM/AAAA -> AAAA-MM-DD
-        // =================================================
+        //
+        // DD/MM/AAAA
+        //       ↓
+        // AAAA-MM-DD
+        // =====================================================
 
         const data =
             `${ano}-${String(mes).padStart(2, "0")}-${String(dia).padStart(2, "0")}`;
 
 
-        // =================================================
+        // =====================================================
         // CRIAR AGENDAMENTO
-        // =================================================
+        // =====================================================
 
         const novoAgendamento = {
 
@@ -369,9 +385,9 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
 
-        // =================================================
+        // =====================================================
         // PEGAR AGENDAMENTOS SALVOS
-        // =================================================
+        // =====================================================
 
         let agendamentos = [];
 
@@ -409,16 +425,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        // =================================================
+        // =====================================================
         // ADICIONAR NOVO AGENDAMENTO
-        // =================================================
+        // =====================================================
 
         agendamentos.push(novoAgendamento);
 
 
-        // =================================================
+        // =====================================================
         // SALVAR
-        // =================================================
+        // =====================================================
 
         try {
 
@@ -439,13 +455,12 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
             return;
-
         }
 
 
-        // =================================================
+        // =====================================================
         // MENSAGEM
-        // =================================================
+        // =====================================================
 
         const mensagem =
             document.getElementById(
@@ -479,9 +494,9 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-        // =================================================
+        // =====================================================
         // CONSOLE
-        // =================================================
+        // =====================================================
 
         console.log(
             "================================="
@@ -512,9 +527,9 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-        // =================================================
+        // =====================================================
         // LIMPAR FORMULÁRIO
-        // =================================================
+        // =====================================================
 
         formulario.reset();
 

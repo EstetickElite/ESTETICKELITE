@@ -248,7 +248,6 @@ document.addEventListener("DOMContentLoaded", function () {
         renderPainelAdmin();
     }
 });
-=======
     // =====================================================
     // PROTEÇÃO DO PAINEL
     // =====================================================
@@ -885,5 +884,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
->>>>>>> 5ba0533b97ca9bdcfc59063b03895b36937a78da
