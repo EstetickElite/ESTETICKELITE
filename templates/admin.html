@@ -43,231 +43,133 @@
     <!-- HEADER -->
 
     <header>
-
         <div class="container header-estetick">
-
             <div class="header-container">
-
                 <a href="../index.html" class="logo-estetick">
-
                     <img src="../static/img/logo.png" alt="Logo da EstetickElite">
-
                     <span>
                         Estetick<span>Elite</span>
                     </span>
-
                 </a>
 
                 <ul class="nav nav-estetick">
-
                     <li class="nav-item">
-
                         <a href="./agendamentos.html" class="nav-link px-2">
                             Agendamentos
                         </a>
-
                     </li>
-
                     <li class="nav-item">
-
                         <a href="./concluidos.html" class="nav-link px-2">
                             Serviços Concluídos
                         </a>
-
                     </li>
-
                 </ul>
 
 
                 <div class="botoes-header">
-
                     <a href="./login-admin.html" class="btn-agendar" onclick="sessionStorage.removeItem('adminLogado')">
                         Sair
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </header>
-
-
     <!-- PAINEL -->
-
     <main>
-
         <div class="container painel-admin">
-
-
             <!-- TÍTULO -->
-
             <div class="titulo-admin">
-
                 <span class="admin-tag">
                     ÁREA RESTRITA
                 </span>
-
                 <h1>
                     Painel Administrativo
                 </h1>
-
                 <p>
                     Gerencie os agendamentos e acompanhe os serviços realizados.
                 </p>
-
             </div>
-
-
             <!-- ESTATÍSTICAS -->
-
             <div class="estatisticas">
-
-
                 <div class="estatistica">
-
                     <span>
                         Agendados
                     </span>
-
                     <h2 id="totalAgendados">
                         0
                     </h2>
-
                 </div>
-
-
                 <div class="estatistica">
-
                     <span>
                         Serviços Feitos
                     </span>
-
                     <h2 id="totalFeitos">
                         0
                     </h2>
-
                 </div>
-
-
                 <div class="estatistica">
-
                     <span>
                         Total de Serviços
                     </span>
-
                     <h2 id="totalServicos">
                         0
                     </h2>
-
                 </div>
-
-
                 <div class="estatistica">
-
                     <span>
                         Taxa de Conclusão
                     </span>
-
                     <h2 id="taxaConclusao">
                         0%
                     </h2>
-
                 </div>
-
             </div>
-
-
             <!-- GRÁFICOS -->
-
             <div class="graficos">
-
-
                 <div class="grafico-box">
-
                     <h3>
                         Status dos Serviços
                     </h3>
-
                     <div class="grafico-container">
-
                         <canvas id="graficoStatus"></canvas>
-
                     </div>
-
                 </div>
-
-
                 <div class="grafico-box">
-
                     <h3>
                         Serviços Agendados
                     </h3>
-
                     <div class="grafico-container">
-
                         <canvas id="graficoServicos"></canvas>
-
                     </div>
-
                 </div>
-
-
             </div>
-
-
             <!-- AGENDADOS -->
-
             <section class="secao-admin">
-
                 <div class="titulo-secao">
-
                     <h2>
                         Agendados para fazer
                     </h2>
-
                     <span class="contador" id="contadorAgendados">
                         0
                     </span>
-
                 </div>
-
-
                 <div id="listaAgendados"></div>
-
             </section>
-
-
             <!-- FEITOS -->
-
             <section class="secao-admin">
-
                 <div class="titulo-secao">
-
                     <h2>
                         Serviços feitos
                     </h2>
-
                     <span class="contador" id="contadorFeitos">
                         0
                     </span>
-
                 </div>
-
-
                 <div id="listaFeitos"></div>
-
             </section>
-
-
         </div>
-
     </main>
-
-
     <script src="./static/js/script.js"></script>
-
 </body>
 
 </html>
