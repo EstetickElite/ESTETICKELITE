@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // ============================
 // EstetickElite - script.js
 // Dados de agendamentos (localStorage) + lógica do painel admin
