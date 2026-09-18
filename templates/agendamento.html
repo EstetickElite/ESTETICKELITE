@@ -129,11 +129,8 @@
                 <!-- NOME -->
                 <div class="mb-3">
 
-                    <label for="nomeCliente" class="form-label">
-                        Nome completo
-                    </label>
-
-                    <input type="text" class="form-control" id="nomeCliente" placeholder="Digite seu nome" required>
+                   <input type="text" class="form-control" id="nomeCliente" placeholder="Digite seu nome"
+                        oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')" required>
 
                 </div>
 
@@ -153,13 +150,8 @@
                 <!-- PLACA -->
                 <div class="mb-3">
 
-                    <label for="placa-veiculo" class="form-label">
-                        Placa do veículo
-                    </label>
-
                     <input type="text" class="form-control" id="placa-veiculo" placeholder="Ex.: ABC1D23" maxlength="7"
-                        style="text-transform: uppercase;" required>
-
+                        style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()" required>
                 </div>
 
 
@@ -360,7 +352,7 @@
                     </div>
 
 
-        <!-- =================================================
+                    <!-- =================================================
          PIX
          ================================================= -->
 
@@ -432,7 +424,7 @@
                     </div>
 
 
-        <!-- =================================================
+                    <!-- =================================================
          CARTÃO
          ================================================= -->
 
@@ -526,7 +518,7 @@
 
                 </div>
 
-    
+
 
                 <!-- =================================================
                      CONFIRMAÇÃO
