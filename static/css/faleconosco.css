@@ -1,74 +1,76 @@
-
 body {
-     background-color: #000000;
-     color: rgb(255, 255, 255);
-      
- }
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 
- .contato {
-     max-width: 850px;
-     margin: 60px auto;
-      border-radius:70px;
-     border-radius:70px;
- }
+}
 
- .contato h1 {
-     color: #d4af37;
-     font-weight: bold;
- }
+.contato {
+  max-width: 850px;
+  margin: 60px auto;
+  border-radius: 70px;
+  border-radius: 70px;
+}
 
- .contato-card {
-     background-color: #000000;
-     border: 1px solid #d4af37;
-     border-radius: 12px;
-     padding: 30px;
-     height: 100%;
- }
+.contato h1 {
+  color: #d4af37;
+  font-weight: bold;
+}
 
- .contato-card h4 {
-     color: #d4af37;
-     font-weight: bold;
- }
+.contato-card {
+  background-color: #000000;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+}
 
- .contato-card p {
-     color: #ffffff;
- }
+.contato-card h4 {
+  color: #d4af37;
+  font-weight: bold;
+}
 
- .form-label {
-     color: #ffffff;
- }
+.contato-card p {
+  color: #ffffff;
+}
 
- .form-control {
-     background-color: #1c1c1c;
-     border: 1px solid #333333;
-     color: rgb(255, 255, 255);
- }
+.form-label {
+  color: #ffffff;
+}
 
- .form-control:focus {
-     background-color: #000000;
-     color: rgb(255, 255, 255);
-     border-color: #d4af37;
-     box-shadow: none;
- }
+.form-control {
+  background-color: #1c1c1c;
+  border: 1px solid #333333;
+  color: rgb(255, 255, 255);
+}
+
+.form-control:focus {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-color: #d4af37;
+  box-shadow: none;
+}
 
 .btn-estetick {
-    background-color: #000000;
-    color: #fff;
-    border: none;
+  background-color: #000000;
+  color: #fff;
+  border: none;
 }
 
 .btn-estetick:hover {
-    background-color: hsl(0, 27%, 81%);
-    color: #fff;
+  background-color: hsl(0, 27%, 81%);
+  color: #fff;
 }
-.btn-estetick w-50{
-color: #fff;
-border-radius: 50px; 
-background-color: #d4af37 
+
+.btn-estetick w-50 {
+  color: #fff;
+  border-radius: 50px;
+  background-color: #d4af37
 }
-.btn-estetick{
-    background-color: #d4af37 
+
+.btn-estetick {
+  background-color: #d4af37
 }
+
 /* Container para espaçar o campo */
 .form-group {
   display: flex;

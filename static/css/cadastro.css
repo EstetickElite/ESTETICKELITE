@@ -36,11 +36,9 @@ main {
     margin: 60px auto;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             #080808,
-            #000000 70%
-        );
+            #000000 70%);
 
     padding: 40px;
 
@@ -77,14 +75,12 @@ main {
 
     height: 2px;
 
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #d4af37,
-        #f5d76e,
-        #d4af37,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            #d4af37,
+            #f5d76e,
+            #d4af37,
+            transparent);
 
     filter: blur(1px);
 
@@ -234,7 +230,7 @@ main {
    LABEL QUANDO O CAMPO RECEBE FOCO
 ===================================================== */
 
-.form-control:focus + .form-label {
+.form-control:focus+.form-label {
     color: #d4af37;
 }
 
@@ -249,11 +245,9 @@ main {
     overflow: hidden;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #d4af37,
-            #b89428
-        );
+            #b89428);
 
     border: 1px solid #d4af37;
 
@@ -292,12 +286,10 @@ main {
     height: 100%;
 
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             transparent,
             rgba(255, 255, 255, 0.45),
-            transparent
-        );
+            transparent);
 
     transform: skewX(-20deg);
 
@@ -316,11 +308,9 @@ main {
 
 .btn-estetick:hover {
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #e5c158,
-            #d4af37
-        );
+            #d4af37);
 
     border-color: #f0d56b;
 
