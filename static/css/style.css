@@ -1258,7 +1258,7 @@ footer::before {
 }
 .card-img{
 
-    width-max: 500px;
+    grid-area: 500px;
     height: 500px;
     border: #ffffff 2px solid;
 }
